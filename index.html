@@ -9,21 +9,30 @@
 	<script src="app.js" defer></script>
 </head>
 <body>
-	<section id="form" class="form">
-		<h1>Register with Us</h1>
-
-		<form action="#">
-			<label for="username">Username:</label><br>
-			<input type="text" id="username" name="username"><br>
-			<label for="username">Email:</label><br>
-			<input type="email" id="email" name="email"><br>
-			<label for="username">Password:</label><br>
-			<input type="password" id="password" name="password"><br>
-			<label for="username">Re-enter Password:</label><br>
-			<input type="password" id="checkPassword" name="checkPassword"><br>
-
-			<br>
-			<input type="submit">
+	<section class="container">
+		<form id="form" class="form">
+			<h2>Register With Us</h2>
+			<div class="form-control">
+				<label for="username">Username</label>
+				<input type="text" id="username" placeholder="Enter username">
+				<small>Error</small>
+			</div>
+			<div class="form-control">
+				<label for="email">Email</label>
+				<input type="text" id="email" placeholder="Enter email">
+				<small>Error</small>
+			</div>
+			<div class="form-control">
+				<label for="password">Password</label>
+				<input type="password" id="password" placeholder="Enter password">
+				<small>Error</small>
+			</div>
+			<div class="form-control">
+				<label for="password2">Confirm Password</label>
+				<input type="password" id="password2" placeholder="Confirm password">
+				<small>Error</small>
+			</div>
+			<button>Confirm</button>
 		</form>
 	</section>
 </body>
